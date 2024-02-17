@@ -3,7 +3,7 @@ import React from 'react';
 
 function Empower() {
   return (
-    <div className="min-h-screen pt-10 bg-gray-50">
+    <div className="min-h-[90vh] pt-10 bg-gray-50">
       <div className=" max-w-4xl mx-auto my-14 text-center space-y-3">
         <h1 className="font-bold text-[53px] leading-[1.3]">
           Empower everyone to spend with confidence.
