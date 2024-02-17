@@ -1,18 +1,11 @@
 import Image from 'next/image';
+import React from 'react';
 
-function Hero() {
+function ClosedLoopDark() {
   return (
-    <div>
-      <div className="flex items-center justify-end bg-black">
-        <div className="w-[900px] h-[620px] relative">
-          <Image
-            className="absolute object-cover"
-            alt="hero image error"
-            src="/hero.png"
-            fill
-          />
-        </div>
-        <div className=" absolute top-280 left-20 max-w-lg">
+    <div className="bg-black">
+      <div className="flex items-center justify-center gap-20 min-h-[90vh] max-w-7xl mx-auto">
+        <div className=" max-w-lg flex-1">
           <h1 className="text-white font-bold text-[61px] leading-[1.3] ">
             The AI-powered spend platform.
           </h1>
@@ -24,9 +17,16 @@ function Hero() {
             Get started
           </button>
         </div>
+        <div className="flex-1 relative h-[500px]">
+          <Image
+            src="/closed-loop-dark.webp"
+            fill
+            alt="closed-loop-dark image error"
+          />
+        </div>
       </div>
     </div>
   );
 }
 
-export default Hero;
+export default ClosedLoopDark;

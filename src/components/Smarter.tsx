@@ -1,29 +1,29 @@
 import React from 'react';
-import Card from './shared/Card';
+import CardTwo from './shared/CardTwo';
 
 function Smarter() {
   return (
-    <div className="min-h-screen my-20">
-      <div className="text-center  mb-10">
-        <h1 className="font-bold text-5xl">
+    <div className="min-h-screen py-20 bg-gray-50">
+      <div className="text-center  mb-16">
+        <h1 className="font-bold text-6xl">
           Spend smarter at every stage of growth.
         </h1>
       </div>
-      <div className="flex items-center justify-center gap-3 p-5">
-        <Card
-          title="Corporate cards"
-          content="Spend smart globally with powerful cards and built-in controls."
-          image="/card.webp"
+      <div className="grid grid-cols-3 place-items-center gap-5 max-w-7xl mx-auto">
+        <CardTwo
+          title="Startups"
+          content="Spend smarter worldwide with AI-powered budgets, expenses, payments, and travel."
+          image="/startups.webp"
         />
-        <Card
+        <CardTwo
           title="Expense management"
           content="Use AI to automate approvals and expense reports. Track in real time."
-          image="/expense.webp"
+          image="/midsize.webp"
         />
-        <Card
-          title="Corporate cards"
-          content="Spend smart globally with powerful cards and built-in controls."
-          image="/card.webp"
+        <CardTwo
+          title="Mid-size companies "
+          content="Simplify global travel and expenses with automation that makes compliance easy."
+          image="/startups.webp"
         />
       </div>
     </div>
